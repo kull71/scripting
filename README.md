@@ -1,5 +1,5 @@
 # Scripting
-## Articulos de script - Objectiovo recordatorio.
+## Articulos de script - Objectivo recordatorio.
 
 ### Colores en Bash
 ```
