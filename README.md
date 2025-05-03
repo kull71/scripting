@@ -94,5 +94,13 @@ Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede pone
     done
     
 #Descubrir máuinas en tu segmento de red
+       !/bin/bash
+     fin="\033[0m\e[0m"
+   rojo="\e[0;31m\033[1m"
+ for i in $(seq 2 254); do
+  # Realiza un ping a cada IP en segundo plano
+ 6   timeout 1 bash -c "ping -c 1 192.168.1.$i &>/dev/null" && echo -e "${rojo}[*] Host 192.168.1.$i: Activo ${fin}" &
+ 7 done
+
  
 
