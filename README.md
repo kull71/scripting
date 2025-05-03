@@ -20,7 +20,7 @@ echo -e "\n${rojoColor}[*]${findColor}${grisColor}Esto está en gris ${finColor}
 
 ```
 ### Configuración en nano
-Fichero /root/.nanorc
+Fichero /root/.nanorc en Parrot esta en /etc/nanorc
 
 Ponemos :
   ```
