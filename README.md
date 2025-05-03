@@ -79,3 +79,16 @@ Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede pone
     echo $open_ports | tr -d '\n' | xclip -sel clip
 
 # Escaneo de puertos con un script en bash.
+#!/bin/bash
+MAX_PROCESOS=135
+if [ -z "$1" ]; then
+echo "Uso: $0 <IP o dominio>"
+exit 1
+fi
+for i in $(seq 1 65535); do
+# Verifica si se alcanzó el número máximo de procesos
+while [ "$(jobs -r | wc -l)" -ge "$MAX_PROCESOS" ]; do
+wait -n
+done
+timeout 1 bash -c "echo > /dev/tcp/$1/$i" 2>/dev/null && echo "[*] Puerto $i: Abierto." &
+done
