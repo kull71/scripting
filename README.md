@@ -29,6 +29,31 @@ Ponemos :
   set smooth
   set linenumbers
   ```
+Path Hijchaking
+  GNU nano 7.2                      proceso.c                                   
+ 1 #include <stdio.h>
+ 2
+ 3 void main() {
+ 4     setuid(0);
+ 5
+ 6     printf ("\n\n Listando procesos (/usr/bin/ps)\n\n");
+ 7     system("/usr/bin/ps");
+ 8     printf("\n\n Listando proceso (ps)\n\n")    ;
+ 9     system("ps");
+10
+11
+12 }
+
+Chequeadno procesos
+1 #/bin/bash
+ 2 old_proces=$(ps -eo command)
+ 3 while true
+ 4 do
+ 5     new_proces=$(ps -eo command)
+ 6     diff <(echo "$old_proces") <(echo "$new_proces") | grep -v "kworker" | g>
+ 7     old_proces=$new_proces
+ 8 done
+
 
 Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede poner en el .Bashrc com una funcion.
 
