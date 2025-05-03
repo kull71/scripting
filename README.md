@@ -25,7 +25,7 @@ Fichero /root/.nanorc en Parrot esta en /etc/nanorc
 Ponemos :
   ```
   set tabsize 4 
-  set autouindent
+  set autoindent
   set smooth
   set linenumbers
   ```
