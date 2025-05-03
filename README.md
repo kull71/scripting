@@ -93,7 +93,7 @@ Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede pone
         timeout 1 bash -c "echo > /dev/tcp/$1/$i" 2>/dev/null && echo "[*] Puerto $i: Abierto." &
     done
     
-# Descubrir máuinas en tu segmento de red
+# Descubrir máquinas en tu segmento de red
     #!/bin/bash
         fin="\033[0m\e[0m"
         rojo="\e[0;31m\033[1m"
