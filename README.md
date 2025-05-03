@@ -92,3 +92,7 @@ Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede pone
         done
         timeout 1 bash -c "echo > /dev/tcp/$1/$i" 2>/dev/null && echo "[*] Puerto $i: Abierto." &
     done
+    
+#Descubrir máuinas en tu segmento de red
+ 
+
