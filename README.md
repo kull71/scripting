@@ -52,9 +52,9 @@ Ponemos :
           done
 
 
-#Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede poner en el .Bashrc com una funcion.                                                             
-#!/bin/bash
-
+#Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede poner en el .Bashrc com una funcion.                                    
+    
+    #!/bin/bash
     verde="\e[0;32m\033[1m"
     fin="\033[0m\e[0m"
     rojo="\e[0;31m\033[1m"
