@@ -29,7 +29,7 @@ Ponemos :
   set smooth
   set linenumbers
   ```
-#Path Hijchaking
+# Path Hijchaking
 
      #include <stdio.h>
          void main() {
@@ -40,7 +40,7 @@ Ponemos :
         system("ps");
     }
 
-#Chequeadno procesos
+# Chequeadno procesos
 
     #/bin/bash
         old_proces=$(ps -eo command)
@@ -52,7 +52,7 @@ Ponemos :
           done
 
 
-#Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede poner en el .Bashrc com una funcion.                                    
+### Grepeado del nmap {ip} -p- --open -n -T5 -v -oG allPorts - Tambien se puede poner en el .Bashrc com una funcion.                                    
     
     #!/bin/bash
     verde="\e[0;32m\033[1m"
