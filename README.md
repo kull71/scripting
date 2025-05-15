@@ -47,7 +47,7 @@ Ponemos :
         while true
          do
              new_proces=$(ps -eo command)
-             diff <(echo "$old_proces") <(echo "$new_proces") | grep -v "kworker" | g>
+             diff <(echo "$old_proces") <(echo "$new_proces") | grep -v "kworker" | grep "[\>\<]"
              old_proces=$new_proces
           done
 
