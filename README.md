@@ -16,7 +16,7 @@
 Para ponerlo en práctica : 
 ```
 Ejemplo:
-echo -e "\n${rojoColor}[*]${findColor}${grisColor}Esto está en gris ${finColor}"
+echo -e "\n${rojo}[*]${findColor}${gris}Esto está en gris ${finColor}"
 
 ```
 ### Configuración en nano
