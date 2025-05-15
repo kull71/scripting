@@ -4,14 +4,14 @@
 ### Colores en Bash
 ```
 #Colours
-    verdeColor="\e[0;32m\033[1m"
-    finColor="\033[0m\e[0m"
-    rojoolor="\e[0;31m\033[1m"
-    azulColor="\e[0;34m\033[1m"
-    amarilloColor="\e[0;33m\033[1m"
-    purpuraColor="\e[0;35m\033[1m"
-    turquoesaColor="\e[0;36m\033[1m"
-    grisColor="\e[0;37m\033[1m"
+    verde="\e[0;32m\033[1m"
+    fin="\033[0m\e[0m"
+    rojo="\e[0;31m\033[1m"
+    azul="\e[0;34m\033[1m"
+    amarillo="\e[0;33m\033[1m"
+    purpura="\e[0;35m\033[1m"
+    turquoesa="\e[0;36m\033[1m"
+    gris="\e[0;37m\033[1m"
 ```
 Para ponerlo en práctica : 
 ```
