@@ -1,6 +1,14 @@
 # Scripting
 ## Articulos de script - Objectivo recordatorio.
 
+###Tmux
+    
+        Acción	            Comando
+        Dividir vertical	Ctrl + b luego %
+        Dividir horizontal	Ctrl + b luego "
+        Cambiar de panel	Ctrl + b luego flechas
+        Cerrar panel    	exit o Ctrl + d
+
 ### Colores en Bash
 ```
 #Colours
